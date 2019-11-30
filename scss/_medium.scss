@@ -24,6 +24,20 @@ nav a {
     font-size: 1.5rem;
 }
 
+@keyframes moveRight {
+    0% {left: -200px;}
+    50% {left: 1000px;}
+    100% {left: 1000px;}
+   
+    
+}
+
+@keyframes moveLeft {
+    0% {right: -200px;}
+    50% {right: -200px;}
+    100% {right: 1000px;}
+    
+}
 
 
 

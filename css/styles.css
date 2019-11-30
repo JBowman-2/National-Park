@@ -385,6 +385,73 @@ main h1 {
   color: #037abe;
   margin: 0 2%; }
 
+/* animation */
+div#chaseRight {
+  margin-left: 2%; }
+
+div#chaseLeft {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%; }
+
+div#chaseRight img {
+  position: relative;
+  animation: moveRight 9s 1; }
+
+div#chaseRight img.bearRight {
+  animation-delay: .2s; }
+
+div#chaseLeft img {
+  position: relative;
+  animation: moveLeft 9s 1; }
+
+div#chaseLeft img.bearLeft {
+  animation-delay: .2s; }
+
+@keyframes moveRight {
+  0% {
+    left: -300px; }
+  50% {
+    left: 700px; }
+  100% {
+    left: 700px; } }
+@keyframes moveLeft {
+  0% {
+    right: -400px; }
+  50% {
+    right: -400px; }
+  100% {
+    right: px; } }
+@keyframes colorChange {
+  0% {
+    background-color: red; }
+  50% {
+    background-color: #806464; }
+  100% {
+    background-color: #320b8b; } }
+@keyframes rotateClock {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes rotateCount {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+@keyframes leftRotClo {
+  0% {
+    left: 0px;
+    transform: rotate(0deg); }
+  45% {
+    left: 100px;
+    transform: rotate(0deg); }
+  55% {
+    left: 100px;
+    transform: rotate(180deg); }
+  100% {
+    left: 0px;
+    transform: rotate(180deg); } }
 .clearfix:after {
   content: "";
   display: table;
@@ -416,7 +483,22 @@ footer {
 
   nav a {
     padding: .8rem 1rem;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  @keyframes moveRight {
+    0% {
+      left: -200px; }
+    50% {
+      left: 1000px; }
+    100% {
+      left: 1000px; } }
+  @keyframes moveLeft {
+    0% {
+      right: -200px; }
+    50% {
+      right: -200px; }
+    100% {
+      right: 1000px; } } }
 @media only screen and (min-width: 900px) {
   header, nav, main, footer {
     max-width: 60rem;
@@ -429,4 +511,25 @@ footer {
   header {
     background-image: url(../images/headerLarge.jpg);
     background-position: left bottom;
-    padding: 6rem 2% 1.5rem 2%; } }
+    padding: 6rem 2% 1.5rem 2%; }
+
+  div#chaseRight img {
+    animation: moveRight 12s 1; }
+
+  div#chaseLeft img {
+    animation: moveLeft 12s 1; }
+
+  @keyframes moveRight {
+    0% {
+      left: -700px; }
+    50% {
+      left: 1700px; }
+    100% {
+      left: 1700px; } }
+  @keyframes moveLeft {
+    0% {
+      right: -700px; }
+    50% {
+      right: -700px; }
+    100% {
+      right: 1700px; } } }

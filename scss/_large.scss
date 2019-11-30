@@ -17,4 +17,32 @@ header {
     
 }
 
+div#chaseRight img {
+    animation: moveRight 12s 1;
+}
+
+
+
+div#chaseLeft img {
+    animation: moveLeft 12s 1;
+    
+}
+
+
+
+@keyframes moveRight {
+    0% {left: -700px;}
+    50% {left: 1700px;}
+    100% {left: 1700px;}
+   
+    
+}
+
+@keyframes moveLeft {
+    0% {right: -700px;}
+    50% {right: -700px;}
+    100% {right: 1700px;}
+    
+}
+
 
