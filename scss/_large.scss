@@ -5,26 +5,26 @@ header, nav, main, footer {
 }
 div#headerWrapper {
     background-image: url(../images/headerRepeat.png);
-    background-position: left bottom;
+    background-position: left center;
 
 }
 
 header {
     background-image: url(../images/headerLarge.jpg);
-    background-position: left bottom;
+    background-position: left center;
     padding: 6rem 2% 1.5rem 2%;
     
     
 }
 
 div#chaseRight img {
-    animation: moveRight 12s 1;
+    animation: moveRight 10s 2;
 }
 
 
 
 div#chaseLeft img {
-    animation: moveLeft 12s 1;
+    animation: moveLeft 10s 2;
     
 }
 
