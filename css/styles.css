@@ -319,6 +319,9 @@ body {
   font-size: 16px; }
 
 /* header */
+div#headerWrapper {
+  background: linear-gradient(to top, #4f6786, #002F6B 100%); }
+
 header {
   padding: .2rem 2%; }
 
@@ -336,6 +339,9 @@ header h2 {
   color: #075282; }
 
 /* navigation */
+div#navWrapper {
+  background-color: #0971B3; }
+
 nav {
   background-color: #0971B3;
   margin-bottom: 0px; }
@@ -383,6 +389,9 @@ main h1 {
   display: table;
   clear: both; }
 
+div#footerWrapper {
+  background-color: #2ea7f4; }
+
 footer {
   background-color: #2ea7f4;
   text-align: center;
@@ -404,5 +413,5 @@ footer {
     font-size: 1.5rem; } }
 @media only screen and (min-width: 1028px) {
   header, nav, main, footer {
-    max-width: 71.25rem;
+    max-width: 60rem;
     margin: auto; } }

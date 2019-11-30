@@ -12,6 +12,10 @@ body {
 
 
 /* header */
+div#headerWrapper {
+    background: linear-gradient(to top, rgb(79, 103, 134) , #002F6B 100%);
+
+}
 
 header {
     padding: .2rem 2%;
@@ -36,7 +40,9 @@ header h2 {
 }
 
 /* navigation */
-
+div#navWrapper {
+    background-color: $subColor;
+}
 
 nav {
     background-color: $subColor;
@@ -98,6 +104,9 @@ main h1 {
     clear: both;
 }
 
+div#footerWrapper {
+    background-color: lighten($subColor, 20%);
+}
 
 footer {
     background-color: lighten($subColor, 20%);
