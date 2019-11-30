@@ -3,5 +3,18 @@ header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
 }
+div#headerWrapper {
+    background-image: url(../images/headerRepeat.png);
+    background-position: left bottom;
+
+}
+
+header {
+    background-image: url(../images/headerLarge.jpg);
+    background-position: left bottom;
+    padding: 6rem 2% 1.5rem 2%;
+    
+    
+}
 
 

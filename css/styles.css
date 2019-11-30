@@ -319,31 +319,32 @@ body {
   font-size: 16px; }
 
 /* header */
-div#headerWrapper {
-  background: linear-gradient(to top, #4f6786, #002F6B 100%); }
-
 header {
-  padding: .2rem 2%; }
+  background-image: url(../images/headerSmall.jpg);
+  background-position: left bottom;
+  padding: 3.3rem 2% 1.3rem 2%; }
 
 header h1 {
-  color: #FF0000;
+  color: #45b9fc;
   font-weight: 700;
   font-size: 3rem;
-  margin: 10px 0px 0px 0px; }
+  margin: 10px 0px 0px 0px;
+  text-shadow: 2px 2px black; }
 
 header h2 {
   font-weight: 400;
   font-size: 1.5rem;
   margin: 0;
   display: block;
-  color: #075282; }
+  color: white;
+  text-shadow: 2px 2px black; }
 
 /* navigation */
 div#navWrapper {
-  background-color: #0971B3; }
+  background-color: #B06A0C; }
 
 nav {
-  background-color: #0971B3;
+  background-color: #B06A0C;
   margin-bottom: 0px; }
 
 nav ul {
@@ -355,10 +356,10 @@ nav li {
   width: 25%;
   list-style-type: none;
   text-align: center;
-  background-color: #2ea7f4; }
+  background-color: #f19f31; }
 
 nav li.active {
-  background-color: #8fd0f9; }
+  background-color: #f7cc91; }
 
 nav a {
   font-size: 1rem;
@@ -370,10 +371,10 @@ nav a {
 
 nav a.active {
   font-weight: 700;
-  color: #FF0000; }
+  color: #037abe; }
 
 nav a:hover {
-  background-color: #075282; }
+  background-color: #804d09; }
 
 /* main */
 main {
@@ -381,7 +382,7 @@ main {
   padding: 1rem 0px; }
 
 main h1 {
-  color: #FF0000;
+  color: #037abe;
   margin: 0 2%; }
 
 .clearfix:after {
@@ -390,15 +391,20 @@ main h1 {
   clear: both; }
 
 div#footerWrapper {
-  background-color: #2ea7f4; }
+  background-color: #2e1e0d; }
 
 footer {
-  background-color: #2ea7f4;
+  background-color: #2e1e0d;
   text-align: center;
   padding: 1rem 2%;
   color: white; }
 
 @media only screen and (min-width: 560px) {
+  header {
+    background-image: url(../images/headerMedium.jpg);
+    background-position: left top;
+    padding: 5rem 2% 1.5rem 2%; }
+
   header h2 {
     font-size: 1.8rem; }
 
@@ -411,7 +417,16 @@ footer {
   nav a {
     padding: .8rem 1rem;
     font-size: 1.5rem; } }
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 900px) {
   header, nav, main, footer {
     max-width: 60rem;
-    margin: auto; } }
+    margin: auto; }
+
+  div#headerWrapper {
+    background-image: url(../images/headerRepeat.png);
+    background-position: left bottom; }
+
+  header {
+    background-image: url(../images/headerLarge.jpg);
+    background-position: left bottom;
+    padding: 6rem 2% 1.5rem 2%; } }

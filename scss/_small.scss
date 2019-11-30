@@ -12,13 +12,12 @@ body {
 
 
 /* header */
-div#headerWrapper {
-    background: linear-gradient(to top, rgb(79, 103, 134) , #002F6B 100%);
 
-}
 
 header {
-    padding: .2rem 2%;
+    background-image: url(../images/headerSmall.jpg);
+    background-position: left bottom;
+    padding: 3.3rem 2% 1.3rem 2%;
     
 }
 
@@ -28,6 +27,7 @@ header h1 {
     font-weight: $heavyWeight;
     font-size: 3rem;
     margin: 10px 0px 0px 0px;
+    text-shadow: 2px 2px black;
 }
 
 header h2 {
@@ -35,7 +35,8 @@ header h2 {
     font-size: 1.5rem;
     margin: 0;
     display: block;
-    color: darken($subColor, 10%);
+    color: white;
+    text-shadow: 2px 2px black;
   
 }
 
@@ -78,7 +79,7 @@ nav a {
 
 nav a.active {
     font-weight: $heavyWeight;
-    color: $primaryColor;
+    color: darken($primaryColor, 25%);
 }
 
 nav a:hover {
@@ -93,7 +94,7 @@ main {
 }
 
 main h1 {
-    color: $primaryColor;
+    color: darken($primaryColor, 25%);
     margin: 0 $gutter;
 }
 
@@ -105,11 +106,11 @@ main h1 {
 }
 
 div#footerWrapper {
-    background-color: lighten($subColor, 20%);
+    background-color: #2e1e0d;
 }
 
 footer {
-    background-color: lighten($subColor, 20%);
+    background-color: #2e1e0d;
     text-align: center;
     padding: 1rem $gutter; 
     color: white;
